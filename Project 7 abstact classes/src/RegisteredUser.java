@@ -7,6 +7,16 @@ public class RegisteredUser extends User implements FormattedOutput{
     String username;
     String password;
 
+    /**
+     * Constuctor for Registered User
+     *
+     * @param nickName The nickname
+     * @param lastLogin When was the last login
+     * @param entryDate When did the Person registered
+     * @param mailAddress The E-Mail
+     * @param username The username of the Person
+     * @param password The password of the Person
+     */
     public RegisteredUser(String nickName, long lastLogin, Date entryDate, String mailAddress, String username, String password) {
         super(nickName, lastLogin, entryDate);
         this.mailAddress = mailAddress;
